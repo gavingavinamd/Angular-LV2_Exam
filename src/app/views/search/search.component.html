@@ -1,0 +1,22 @@
+<div>
+  <div class="Search_Container">
+    <div>
+      <input type="text" placeholder="name/email" [(ngModel)]="keyWord">
+    </div>
+    <div class="Search_Btn">
+      <button (click)="search()">Search</button>
+    </div>
+    <div class="Refresh_Btn">
+      <button (click)="refresh()">Refresh</button>
+    </div>
+  </div>
+  <div class="Member_Container">
+    <div *ngFor="let item of filterMemberData" class="member_item" (click)="onMemberItemClick(item)">
+      <app-member [memberData]="item"></app-member>
+    </div>
+  </div>
+</div>
+<app-detail *ngIf="showModal" [selectedMember]="selectedMember" (closeModal)="closeModal()"></app-detail>
+<div *ngIf="nowMemberRouter">
+  <button (click)="goRouter()">GoRouter</button>
+</div>

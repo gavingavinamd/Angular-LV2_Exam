@@ -1,0 +1,24 @@
+.Search_Container{
+  display: flex;
+  margin-bottom: 20px;
+
+  .Search_Btn{
+    margin-left: 5px;
+  }
+
+  .Refresh_Btn{
+    margin-left:50px;
+  }
+}
+
+.Member_Container{
+  display: flex;
+  width: 50%;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+  .member_item{
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}

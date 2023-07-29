@@ -1,0 +1,14 @@
+<div class="content">
+  <div class="name">{{ member.first_name }}</div>
+  <div class="name">{{ member.last_name }}</div>
+  <div class="email">{{ member.email }}</div>
+  <div class="img">
+    <img [src]="member.avatar" alt="">
+  </div>
+  <div>
+    {{member.Description}}
+  </div>
+</div>
+<div>
+  <button (click)="back()">Back</button>
+</div>
